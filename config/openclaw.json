@@ -1,0 +1,31 @@
+{
+  "gateway": {
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "REPLACE_ME_GATEWAY_TOKEN"
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  },
+  "agents": {
+    "defaults": {
+      "sandbox": {
+        "mode": "non-main",
+        "scope": "session",
+        "workspaceAccess": "none"
+      }
+    }
+  },
+  "tools": {
+    "profile": "messaging",
+    "exec": {
+      "security": "deny",
+      "ask": "always"
+    },
+    "elevated": {
+      "enabled": false
+    }
+  }
+}

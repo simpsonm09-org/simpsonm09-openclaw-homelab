@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openclaw-homelab"
+version = "0.1.0"
+description = "Hardened configuration, validation, and runbooks for a self-hosted OpenClaw gateway."
+requires-python = ">=3.12"
+
+[project.scripts]
+openclaw-homelab-validate = "openclaw_homelab.validate:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/openclaw_homelab"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+pythonpath = ["src"]
