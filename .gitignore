@@ -10,6 +10,10 @@ dist/
 aislop.sarif
 trivy.sarif
 
+# Coverage
+.coverage
+coverage/
+
 # Local tool state
 .aislop/history.jsonl
 .aislop/agent/
