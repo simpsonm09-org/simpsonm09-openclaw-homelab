@@ -23,3 +23,5 @@ coverage/
 .env
 *.token
 openclaw.local.json
+
+artifacts/
