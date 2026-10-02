@@ -12,7 +12,7 @@ requires-python = ">=3.12"
 openclaw-homelab-validate = "openclaw_homelab.validate:main"
 
 [project.optional-dependencies]
-test = ["pytest>=8"]
+test = ["pytest>=8", "pytest-cov>=5"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/openclaw_homelab"]
