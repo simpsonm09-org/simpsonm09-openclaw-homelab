@@ -21,6 +21,10 @@ run = "flint run"
 description = "Auto-fix lint issues"
 run = "flint run --fix"
 
+[tasks.deps]
+description = "Install the Python dependencies for local runs and tests"
+run = 'python -m pip install -e ".[test]"'
+
 [tasks.test]
 description = "Run the tests"
 run = "python -m pytest"
