@@ -2,4 +2,7 @@ line-length = 100
 src = ["src", "tests"]
 
 [lint]
-select = ["E", "F", "I", "UP", "B"]
+select = ["E", "F", "I", "UP", "B", "C901", "PLR0912", "PLR0915", "PLR0913"]
+
+[lint.mccabe]
+max-complexity = 10
