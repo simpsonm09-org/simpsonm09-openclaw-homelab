@@ -27,6 +27,10 @@ aislop:
 test:
     mise run test
 
+# Run the suite with an lcov coverage report under coverage/.
+coverage:
+    mise run coverage
+
 # Lint and test.
 verify: lint test
 
