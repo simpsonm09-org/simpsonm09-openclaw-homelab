@@ -24,3 +24,7 @@ run = "flint run --fix"
 [tasks.test]
 description = "Run the tests"
 run = "python -m pytest"
+
+[tasks.coverage]
+description = "Run the tests with an lcov coverage report"
+run = 'python -m pytest --cov=src --cov-branch --cov-report=lcov:coverage/lcov.info'
