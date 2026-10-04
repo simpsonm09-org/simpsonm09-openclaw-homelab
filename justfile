@@ -11,6 +11,10 @@ default:
 install:
     mise install
 
+# Install the Python dependencies for local runs and tests.
+deps:
+    mise run deps
+
 # Run every linter over the tracked files.
 lint:
     mise exec -- flint run --full
@@ -29,6 +33,7 @@ test:
 
 # Run the suite with an lcov coverage report under coverage/.
 coverage:
+    mise run deps
     mise run coverage
 
 # Lint and test.
