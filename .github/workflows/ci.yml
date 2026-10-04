@@ -48,7 +48,7 @@ jobs:
       - name: Install and test
         run: |
           pip install -e '.[test]'
-          pytest --cov=src --cov-report=lcov:coverage/lcov.info
+          pytest --cov=src --cov-branch --cov-report=lcov:coverage/lcov.info
       - name: Patch coverage
         env:
           BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
