@@ -21,6 +21,8 @@ coverage/
 
 # Secrets and OpenClaw runtime state. Never commit these.
 .env
+.env.*
+!.env.example
 *.token
 openclaw.local.json
 
