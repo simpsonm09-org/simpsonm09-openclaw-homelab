@@ -27,7 +27,7 @@ Preconditions:
 - **Pass path.** Run `.venv\Scripts\python.exe -m openclaw_homelab config/openclaw.json`. Exit `0`, stdout is `config\openclaw.json: ok`, stderr is empty.
 - **Default path.** Run `.venv\Scripts\python.exe -m openclaw_homelab` with no argument. Exit `0` and stdout names the default `config/openclaw.json` with `: ok`.
 - **Violation path.** Copy the template, set `gateway.bind` to `"0.0.0.0"`, and run the CLI on the copy. Exit `1`, stdout is empty, and stderr carries `1 violation(s)` and `  - gateway.bind: must be 'loopback'; a wildcard bind exposes the Gateway on the network`.
-- **Helper.** Run `.venv\Scripts\python.exe .opencode/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator`. It drives the pass, default, and violation paths together and writes `artifacts/verify/validator/evidence.json`.
+- **Helper.** Run `.venv\Scripts\python.exe .claude/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator`. It drives the pass, default, and violation paths together and writes `artifacts/verify/validator/evidence.json`.
 - **Proof.** Keep `artifacts/verify/validator/evidence.json`. A passing run prints `verify: pass` and exits `0`.
 
 ## Gotchas

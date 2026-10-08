@@ -53,7 +53,7 @@ The version must be 3.12 (the package requires `>=3.12`), the command must exit 
 Run the shipped helper from the repository root against the real CLI:
 
 ```bash
-.venv\Scripts\python.exe .opencode/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator
+.venv\Scripts\python.exe .claude/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator
 ```
 
 The helper shells out to `python -m openclaw_homelab` (the interpreter running the helper, with `src/` on `PYTHONPATH`) over four inputs and records each one's exit code, stdout, and stderr:
