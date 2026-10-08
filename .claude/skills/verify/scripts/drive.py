@@ -3,7 +3,7 @@
 
 Start from the repository root with the project's Python, then run:
 
-    .venv\\Scripts\\python.exe .opencode/skills/verify/scripts/drive.py \
+    .venv\\Scripts\\python.exe .claude/skills/verify/scripts/drive.py \
         --repo-root . \
         --out artifacts/verify/validator
 

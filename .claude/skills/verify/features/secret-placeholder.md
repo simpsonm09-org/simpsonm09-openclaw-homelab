@@ -21,7 +21,7 @@ Preconditions:
 
 - **Pass.** The shipped `config/openclaw.json` keeps the placeholder. Run `.venv\Scripts\python.exe -m openclaw_homelab config/openclaw.json`. Exit `0`, no `gateway.auth.token` line on stderr.
 - **Detected.** Copy the template, set `gateway.auth.token` to `"not-a-placeholder"`, and run the CLI on the copy. Exit `1`, and stderr carries `  - gateway.auth.token: must stay 'REPLACE_ME_GATEWAY_TOKEN' in the repository; inject the real token at deploy time (docs/secrets.md)`.
-- **Helper.** Run `.venv\Scripts\python.exe .opencode/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator`. The `non_placeholder_token` case in `artifacts/verify/validator/evidence.json` records the exit code, stdout, and stderr for the detected path.
+- **Helper.** Run `.venv\Scripts\python.exe .claude/skills/verify/scripts/drive.py --repo-root . --out artifacts/verify/validator`. The `non_placeholder_token` case in `artifacts/verify/validator/evidence.json` records the exit code, stdout, and stderr for the detected path.
 - **Proof.** Keep `artifacts/verify/validator/evidence.json` and read the `non_placeholder_token` entry; the value used is a deliberately non-placeholder string, never a real credential.
 
 ## Gotchas
