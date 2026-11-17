@@ -32,6 +32,6 @@ Every key below maps to a check in `check_controls` and to an entry in
 
 ## Widening
 
-Change one control at a time, on the fork's `local` branch, and re-run
+Change one control at a time, on a local `local` branch that is never pushed, and re-run
 `openclaw security audit --deep` after each change. The invariants here describe
 the baseline, not a permanent ceiling.

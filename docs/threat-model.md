@@ -49,5 +49,5 @@
 ## Out of scope
 
 - Securing the Windows host itself. That belongs to
-  [`dev-setup-starter`](https://github.com/simpsonm09-org/simpsonm09-dev-setup).
+  [`simpsonm09-dev-setup`](https://github.com/simpsonm09-projects/simpsonm09-dev-setup).
 - Multi-user, multi-tenant operation.
