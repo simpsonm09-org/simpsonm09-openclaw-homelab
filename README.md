@@ -11,7 +11,7 @@ repository holds the plan, the hardened configuration, the validator, and the
 runbooks. The install happens in [Phase 1](docs/setup-plan.md).
 
 Part of the `simpsonm09-projects` fleet. This repository lives in
-[`simpsonm09-projects/simpsonm09-openclaw-homelab`](https://github.com/simpsonm09-projects/simpsonm09-openclaw-homelab).
+[`simpsonm09-projects/openclaw-homelab`](https://github.com/simpsonm09-projects/openclaw-homelab).
 Work happens on a branch with a pull request into `main`. See
 [`repo-standard`](https://github.com/simpsonm09-projects/simpsonm09-repo-standard) for the shared
 CI, linting, security scanning, and branch governance.
