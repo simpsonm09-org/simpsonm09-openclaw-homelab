@@ -31,7 +31,7 @@ Either way, the repository copy keeps the placeholder.
 
 ## On the local branch
 
-Per [`repo-standard`'s governance](https://github.com/simpsonm09-projects/simpsonm09-repo-standard/blob/main/docs/governance.md),
+Per [`repo-standard`'s governance](https://github.com/simpsonm09-projects/repo-standard/blob/main/docs/governance.md),
 machine paths, secret wiring, and model overrides belong on a local `local`
 branch that is never pushed. That branch is the private divergence point. Nothing
 on `local` is a pull-request candidate.
